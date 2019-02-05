@@ -25,13 +25,9 @@
           <div class="row p-2" style="	background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75));	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
             <div class="col-md-12 pt-1">
               <h1 class="display-4">Add Contact</h1>
-              <form class="form-inline pb-3 pl-2">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Name" id="newContactName"> </div>
-                <div class="form-group">
-                  <input type="text" class="form-control mx-2" id="newContactPhone" placeholder="Phone"> </div>
-              </form>
-              <form class="">
+              <form class=""> <!--Hopefully this puts these fields on separate lines-->
+                <div class="form-group"> <input type="text" class="form-control" placeholder="Name" id="newContactName"> </div>
+                <div class="form-group"> <input type="text" class="form-control mx-2" id="newContactPhone" placeholder="Phone"> </div>
                 <div class="form-group"> <input type="email" class="form-control" placeholder="Email" id="newContactEmail"> </div>
                 <div class="form-group"> <input type="text" class="form-control" placeholder="Address" id="newContactAddress"> </div> <button type="button" class="btn btn-primary" onclick="addContacts()">Add</button>
               </form>
@@ -41,13 +37,9 @@
           <div class="row border-0 p-2" style="	background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75));	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
             <div class="col-md-12 pt-1">
               <h4 class="display-4">Search Contact</h4>
-              <form class="form-inline pl-2 pb-3">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="contactName" placeholder="Name"> </div>
-                <div class="form-group">
-                  <input type="text" class="form-control mx-2" id="contactPhone" placeholder="Phone"> </div>
-              </form>
-              <form class="">
+              <form class=""> <!--Same thing, hopefully this puts these fields on separate lines and doesn't break anything-->
+                <div class="form-group"> <input type="text" class="form-control" id="contactName" placeholder="Name"> </div>
+                <div class="form-group"> <input type="text" class="form-control mx-2" id="contactPhone" placeholder="Phone"> </div>
                 <div class="form-group"> <input type="email" class="form-control" placeholder="Email" id="contactEmail"> </div>
                 <div class="form-group"> <input type="text" class="form-control" placeholder="Address" id="contactAddress"> </div> <button type="button" class="btn btn-primary" onclick="displayContact()">Search</button>
               </form>
